@@ -105,7 +105,9 @@ function chan(p, q, r) {
   $("h1").text(get + " WINS");
   startagain();
   setTimeout(() => {
-    if (st == false) $("h1").text("Press Any key to Restart The Game");
+    if (st == false) {
+      $("h1").removeClass("big");
+      $("h1").text("Press Any key to Restart The Game");}
   }, 8000);
 }
 function startagain() {
