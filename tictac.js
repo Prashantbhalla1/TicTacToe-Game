@@ -121,7 +121,9 @@ function gameover() {
   au.play();
   $("h1").text("GAME-OVER");
   startagain();
-  setTimeout(() => {
-    if (st == false) $("h1").text("Press Any key to Restart The Game");
+   setTimeout(() => {
+    if (st == false) {
+      $("h1").removeClass("big");
+      $("h1").text("Press Any key to Restart The Game");}
   }, 8000);
 }
